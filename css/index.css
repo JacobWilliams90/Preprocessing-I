@@ -126,11 +126,39 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
 }
 html,
 body {
   height: 100%;
+  width: 1000px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'Abril Fatface';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v10/zOL64pLDlL1D99S8g8PtiKchq-dmiA.ttf) format('truetype');
+}
+header div {
+  flex-direction: row;
+}
+header img {
+  justify-content: center;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+nav a {
+  color: Crimson;
+  margin-left: 20px;
+  font-size: 1.6rem;
+}
+nav .first-anchor {
+  margin-left: 0;
+}
+ul {
+  list-style-type: circle;
 }

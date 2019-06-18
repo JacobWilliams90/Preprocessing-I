@@ -48,11 +48,55 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
 	height: 100%;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+header{
+		
+	div{
+		flex-direction: row;
+	}	
+
+	img{
+		justify-content: center;
+	}
+
+	@media(max-width: 700px){
+	
+	}
+
+	@media(max-width: 500px){
+	
+	}
+}
+
+nav {
+	display:flex;
+	justify-content: flex-end;
+
+	@media(max-width: 500px) {
+	}
+
+	a {
+		color: Crimson;
+		margin-left: 20px;
+		font-size: 1.6rem;
+	}
+
+	.first-anchor {
+		margin-left: 0;
+	}
+}
+
+ul{
+	list-style-type: circle;
 }
