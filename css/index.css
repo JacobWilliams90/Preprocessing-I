@@ -132,8 +132,6 @@ table {
 html,
 body {
   height: 100%;
-  width: 1000px;
-  margin: 0 auto;
 }
 @font-face {
   font-family: 'Abril Fatface';
@@ -141,24 +139,57 @@ body {
   font-weight: 400;
   src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v10/zOL64pLDlL1D99S8g8PtiKchq-dmiA.ttf) format('truetype');
 }
-header div {
-  flex-direction: row;
+body {
+  width: 1000px;
+  margin: 0 auto;
+  background: lightgray;
 }
-header img {
-  justify-content: center;
+.midpage {
+  margin-top: 1.4rem;
+  border: solid 1px black;
+  display: flex;
+}
+.midpage section {
+  border: solid 1px black;
+  width: 49%;
+  margin: 1rem;
+}
+.bottompage {
+  margin-top: 1.4rem;
+  border: solid 1px black;
+}
+.bottompage p {
+  text-align: center;
+}
+header {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
 }
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 nav a {
   color: Crimson;
   margin-left: 20px;
   font-size: 1.6rem;
 }
-nav .first-anchor {
+@media (max-width: 800px) {
+  nav a {
+    display: flex;
+  }
+}
+nav a .first-anchor {
   margin-left: 0;
 }
 ul {
   list-style-type: circle;
+  list-style-position: inside;
 }
