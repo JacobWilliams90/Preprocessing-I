@@ -140,54 +140,82 @@ body {
   src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v10/zOL64pLDlL1D99S8g8PtiKchq-dmiA.ttf) format('truetype');
 }
 body {
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
-  background: lightgray;
-}
-.midpage {
-  margin-top: 1.4rem;
-  border: solid 1px black;
-  display: flex;
-}
-.midpage section {
-  border: solid 1px black;
-  width: 49%;
-  margin: 1rem;
-}
-.bottompage {
-  margin-top: 1.4rem;
-  border: solid 1px black;
-}
-.bottompage p {
-  text-align: center;
 }
 header {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  margin-top: 15px;
 }
-nav {
+header nav {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
-@media (max-width: 800px) {
-  nav {
+@media (max-width: 500px) {
+  header nav {
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
 }
-nav a {
+header nav a {
   color: Crimson;
   margin-left: 20px;
   font-size: 1.6rem;
 }
-@media (max-width: 800px) {
-  nav a {
-    display: flex;
+header nav .first-anchor {
+  margin-left: 0;
+}
+header img {
+  margin: 3.5rem;
+}
+@media (max-width: 500px) {
+  header img {
+    display: none;
   }
 }
-nav a .first-anchor {
-  margin-left: 0;
+header div {
+  margin: 1rem;
+}
+header h1 {
+  font-size: 3rem;
+  margin: 1.5rem;
+}
+header p {
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+header button {
+  padding: 30px;
+  border-radius: 76%;
+  background: white;
+  font-size: 2rem;
+}
+header button:hover {
+  color: red;
+  background: black;
+}
+.midpage {
+  margin-top: 1.4rem;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.midpage section {
+  border: solid 1px black;
+  width: 40%;
+  margin: 1rem;
+  padding: 2rem;
+}
+.bottompage {
+  margin-top: 1.4rem;
+}
+.bottompage p {
+  text-align: center;
 }
 ul {
   list-style-type: circle;
