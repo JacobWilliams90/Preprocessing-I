@@ -48,12 +48,105 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+body{
+	width: 100%;
+	margin: 0 auto;
+	ul{
+		list-style-type: circle;
+		list-style-position: inside;
+	}
+	a{
+		text-decoration: none;
+	}
+	a:hover{
+		text-decoration: underline;
+	}
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 15px;
+	
+	nav {
+		display:flex;
+		justify-content: center;
+		width: 100%;
+	
+			@media(max-width: 500px){
+				flex-direction: column;
+				align-items: center;
+			}
+	
+		a {
+			color: Crimson;
+			margin-left: 20px;
+			font-size: 1.6rem;
+		}
+	
+		.first-anchor {
+			margin-left: 0;
+		}
+	}
+
+	img{
+		margin: 3.5rem;
+		@media(max-width: 500px){
+			display: none;
+		}
+	}
+	div{
+		margin: 1rem;
+		background: lightblue;
+		padding: 3rem;
+	}
+	h1{
+		font-size: 3rem;
+		margin: 1.5rem;
+	}
+	p{
+		margin: 2rem;
+	}
+	button{
+		padding: 30px;
+		border-radius: 76%;
+		background: white;
+		font-size: 2rem;
+	}
+	button:hover{
+		color: red;
+		background: black;
+	}
+}
+
+.midpage{
+	margin-top: 1.4rem;
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	section{
+		border: solid 1px black;
+		width: 40%;
+		margin: 1rem;
+		padding: 2rem;
+	}
+}
+
+.bottompage{
+	margin-top: 1.4rem;
+	text-align: center;
+}
